@@ -26,5 +26,12 @@ namespace AppFinalProgramacionIV
         {
             Application.Exit();
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            Modulo2 IrModul = new Modulo2();
+            this.Hide();
+            IrModul.Show();
+        }
     }
 }
