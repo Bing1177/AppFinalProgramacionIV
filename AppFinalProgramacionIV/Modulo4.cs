@@ -16,5 +16,21 @@ namespace AppFinalProgramacionIV
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String Resp = Invertir(txtPalabra.Text);
+            lbResultado.Text = "Palabra Invertida: " + Resp;
+        }
+
+        private String Invertir(string palabra)
+        {
+            string PalabraInvr = "";
+            foreach (char letra in palabra)
+            {
+                PalabraInvr = letra + PalabraInvr;
+            }
+            return PalabraInvr;
+        }
     }
 }

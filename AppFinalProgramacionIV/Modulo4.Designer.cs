@@ -32,7 +32,8 @@ namespace AppFinalProgramacionIV
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPalabra = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lbResultado = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -60,14 +61,24 @@ namespace AppFinalProgramacionIV
             this.txtPalabra.Size = new System.Drawing.Size(292, 37);
             this.txtPalabra.TabIndex = 2;
             // 
-            // label3
+            // lbResultado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 186);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(190, 29);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Palabra Invertida:";
+            this.lbResultado.AutoSize = true;
+            this.lbResultado.Location = new System.Drawing.Point(12, 186);
+            this.lbResultado.Name = "lbResultado";
+            this.lbResultado.Size = new System.Drawing.Size(190, 29);
+            this.lbResultado.TabIndex = 3;
+            this.lbResultado.Text = "Palabra Invertida:";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(146, 116);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(120, 47);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Invertir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Modulo4
             // 
@@ -75,7 +86,8 @@ namespace AppFinalProgramacionIV
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(413, 267);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbResultado);
             this.Controls.Add(this.txtPalabra);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -93,6 +105,7 @@ namespace AppFinalProgramacionIV
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPalabra;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbResultado;
+        private System.Windows.Forms.Button button1;
     }
 }

@@ -90,6 +90,7 @@ namespace AppFinalProgramacionIV
             this.btn4.TabIndex = 4;
             this.btn4.Text = "MODULO4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
