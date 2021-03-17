@@ -40,5 +40,12 @@ namespace AppFinalProgramacionIV
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra el formulario del modulo3
         }
+
+        private void btn5_Click(object sender, EventArgs e)
+        {
+            Modulo5 formaSiguiente = new Modulo5();
+            this.Hide(); //oculta la forma actual
+            formaSiguiente.Show(); // muestra el formulario del modulo5
+        }
     }
 }
