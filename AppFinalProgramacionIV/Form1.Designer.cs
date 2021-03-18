@@ -111,6 +111,7 @@ namespace AppFinalProgramacionIV
             this.btn6.TabIndex = 6;
             this.btn6.Text = "MODULO6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btnsalir
             // 

@@ -40,5 +40,12 @@ namespace AppFinalProgramacionIV
             this.Hide();
             IrModul.Show();
         }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            Modulo6 IrModul = new Modulo6();
+            this.Hide();
+            IrModul.Show();
+        }
     }
 }
