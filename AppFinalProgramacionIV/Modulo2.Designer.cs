@@ -36,6 +36,7 @@ namespace AppFinalProgramacionIV
             this.btnCalc = new System.Windows.Forms.Button();
             this.txtBase = new System.Windows.Forms.TextBox();
             this.txtAltura = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -104,12 +105,24 @@ namespace AppFinalProgramacionIV
             this.txtAltura.Size = new System.Drawing.Size(100, 20);
             this.txtAltura.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(12, 223);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 33);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Volver";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Modulo2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.ClientSize = new System.Drawing.Size(445, 268);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtAltura);
             this.Controls.Add(this.txtBase);
             this.Controls.Add(this.btnCalc);
@@ -134,5 +147,6 @@ namespace AppFinalProgramacionIV
         private System.Windows.Forms.Button btnCalc;
         private System.Windows.Forms.TextBox txtBase;
         private System.Windows.Forms.TextBox txtAltura;
+        private System.Windows.Forms.Button button1;
     }
 }

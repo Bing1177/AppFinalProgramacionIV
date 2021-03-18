@@ -24,11 +24,10 @@ namespace AppFinalProgramacionIV
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            int Area;
-            if ((txtBase.Text!="")&&(txtAltura.Text!=""))
+            if ((txtBase.Text!="")&&(txtAltura.Text!="")) //hacer que el usuario llene campos
             {
-                Area = CalcArea(Convert.ToInt32(txtBase.Text), Convert.ToInt32(txtAltura.Text));
-                lbArea.Text = "Área: " + Area + "m";
+                int Area = CalcArea(Convert.ToInt32(txtBase.Text), Convert.ToInt32(txtAltura.Text)); //Invocar funcion
+                lbArea.Text = "Área: " + Area + "m"; //Mostrar resultados
             }
             else
             {
@@ -36,8 +35,16 @@ namespace AppFinalProgramacionIV
             }
         }
 
-        private int CalcArea(int b, int a) {
+        private int CalcArea(int b, int a) //calcular area
+        {
             return b * a;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 IrModul = new Form1();
+            this.Hide();
+            IrModul.Show();
         }
     }
 }

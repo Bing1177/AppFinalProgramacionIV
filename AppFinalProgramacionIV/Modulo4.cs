@@ -19,18 +19,33 @@ namespace AppFinalProgramacionIV
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String Resp = Invertir(txtPalabra.Text);
-            lbResultado.Text = "Palabra Invertida: " + Resp;
+            if (txtPalabra.Text != "") //oblicar al usuario a llenar campos
+            {
+                String Resp = Invertir(txtPalabra.Text); //Invocar funcion
+                lbResultado.Text = "Palabra Invertida: " + Resp; //Mostrar resultado
+            }
+            else
+            {
+                MessageBox.Show("por favor llenar campos :)");
+            }
+            
         }
 
         private String Invertir(string palabra)
         {
-            string PalabraInvr = "";
+            string PalabraInvr = ""; //Variable para almacenar palabra invertida
             foreach (char letra in palabra)
             {
-                PalabraInvr = letra + PalabraInvr;
+                PalabraInvr = letra + PalabraInvr; //Invertir palabra
             }
             return PalabraInvr;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 IrModul = new Form1();
+            this.Hide();
+            IrModul.Show();
         }
     }
 }

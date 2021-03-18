@@ -19,8 +19,16 @@ namespace AppFinalProgramacionIV
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String Resp = SumNum(txtNum.Text); //Invocar funcion para la suma dificil
-            lbResultado.Text = "Resultado: " + Resp; //Mostrar resultado
+            if (txtNum.Text != "")
+            {
+                String Resp = SumNum(txtNum.Text); //Invocar funcion para la suma dificil
+                lbResultado.Text = "Resultado: " + Resp; //Mostrar resultado
+            }
+            else 
+            {
+                MessageBox.Show("por favor llenar campos :)");
+            }
+            
         }
 
         private String SumNum(string ConvertNum)
@@ -48,6 +56,13 @@ namespace AppFinalProgramacionIV
             }
             result = Convert.ToString(resultado);
             return result;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form1 IrModul = new Form1();
+            this.Hide();
+            IrModul.Show();
         }
     }
 }
