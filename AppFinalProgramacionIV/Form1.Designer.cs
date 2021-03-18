@@ -70,6 +70,7 @@ namespace AppFinalProgramacionIV
             this.btn2.TabIndex = 2;
             this.btn2.Text = "MODULO2";
             this.btn2.UseVisualStyleBackColor = true;
+            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -91,6 +92,7 @@ namespace AppFinalProgramacionIV
             this.btn4.TabIndex = 4;
             this.btn4.Text = "MODULO4";
             this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.btn4_Click);
             // 
             // btn5
             // 
@@ -112,6 +114,7 @@ namespace AppFinalProgramacionIV
             this.btn6.TabIndex = 6;
             this.btn6.Text = "MODULO6";
             this.btn6.UseVisualStyleBackColor = true;
+            this.btn6.Click += new System.EventHandler(this.btn6_Click);
             // 
             // btnsalir
             // 

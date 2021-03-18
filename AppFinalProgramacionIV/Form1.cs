@@ -47,5 +47,26 @@ namespace AppFinalProgramacionIV
             this.Hide(); //oculta la forma actual
             formaSiguiente.Show(); // muestra el formulario del modulo5
         }
+
+        private void btn2_Click(object sender, EventArgs e)
+        {
+            Modulo2 IrModul = new Modulo2();
+            this.Hide();
+            IrModul.Show();
+        }
+
+        private void btn4_Click(object sender, EventArgs e)
+        {
+            Modulo4 IrModul = new Modulo4();
+            this.Hide();
+            IrModul.Show();
+        }
+
+        private void btn6_Click(object sender, EventArgs e)
+        {
+            Modulo6 IrModul = new Modulo6();
+            this.Hide();
+            IrModul.Show();
+        }
     }
 }
